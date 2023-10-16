@@ -2,18 +2,19 @@ main
 /*Reset*/
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    margin: 0%;
+    padding: 0%;
 }
 body > header {
     background-color:rgb(95, 54, 161);
-    padding: 16px 0;
- }
+    padding: 40px 0;
+}
 
-header .container {
+.container {
     display: flex;
     align-items: center;
 }
+
 header li {
     display: inline;
 }
@@ -88,6 +89,34 @@ h2 {
     color: #d31212; 
 }
 
+.Esporte{
+    background-color: #ffff00;
+
+}
+
+.Tec{
+    background:goldenrod;
+}
+
+.Superbowl{
+    background-color: #ffff00;
+}
+
+.NBA {
+    background-color: #ffff00;
+}
+
+.Euro {
+    background:#ffff00;
+}
+
+.Politica {
+    background-color: #ffff00;
+}
+
+.Economia{
+    background:orange;
+}
 .Noticia {
     background-color: #ffff00;
 }
@@ -98,8 +127,10 @@ h2 {
 
 /* styles.css */
 body {
-    background-color: #0f8d24;
+    background-color: #607fd6;
     color: #333; 
+    margin-left: 20px;
+    padding: 10px;
 }
 h1 {
     color: #230e97; 
