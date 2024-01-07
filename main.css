@@ -1,0 +1,11 @@
+main
+function trocarCor() {
+  /*Obter o elemento com o id "titulo"*/
+  titulo = document.getElementById("titulo");
+  titulo.style.color = "blue";
+}
+
+
+
+
+
