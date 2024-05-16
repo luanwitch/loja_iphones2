@@ -24,7 +24,6 @@ $(document).ready(function() {
         </div>
         `).appendTo(novoItem);
         $(novoItem).appendTo('ul');
-        //demora para carregar a imagem.
         $(novoItem).fadeIn(5000);
         $('#endereco-imagem-nova').val('');
         // Aqui você pode adicionar o código para lidar com a submissão do formulário, se necessário
