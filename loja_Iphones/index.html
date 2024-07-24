@@ -92,40 +92,32 @@
                         <strong>R$ 5.000,00</strong>
                     <button type="button">Adicionar ao Carrinho</button>
                 </li>
-                <li class="item-central">
-                    <img src="./imagens/iphone12.jpg" alt="">
-                    <h3>Iphone 10</h3>
-                    <p>
-                        iPhone 12. Tela Super Retina XDR brilhante de 6,1 polegadas
-                    </p>
-                        <strong>R$ 5.000,00</strong>
-                    <button type="button">Adicionar ao Carrinho</button>
-                </li>
             </ul>
         </div>    
     </section>
     <section id="contato">
         <div class="container">
+            <h2>Entre em contato</h2>
             <form>
                 <div class="form-campo">
                     <label  for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome">
+                    <input type="text" id="nome" name="nome" autocomplete="name">
                 </div>
                 <div class="form-campo">
                     <label  for="telefone">Telefone:</label>
-                    <input type="tel" id="telefone" name="telefone" >
+                    <input type="tel" id="telefone" name="telefone" autocomplete="telefone">
                 </div>
                 <div class="form-campo">
                     <label  for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" >
+                    <input type="email" id="email" name="email" autocomplete="email">
                 </div>
                 <div class="form-campo">
                     <label  for="veiculo-interesse">Veículo de interesse:</label>
-                    <input type="text" id="veiculo-interesse" name="veiculoDeInteresse">
+                    <input type="text" id="veiculo-interesse" name="veiculoDeInteresse"   autocomplete="off">
                 </div>
                 <div class="form-campo">
                     <label  for="mensagem">Mensagem:</label>
-                    <textarea id="mensagem"></textarea>
+                    <textarea id="mensagem" autocomplete="off"></textarea>
                 </div>
                 <button type="submit">Enviar</button>
             </form>

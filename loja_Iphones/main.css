@@ -4,18 +4,18 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-
+    
 .container {
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 15px; /* Adiciona um padding interno */
+    text-align: center;
 }
 
-header, footer {
+header,footer {
     background-color: #192a56;
+    padding-top: 16px;
     color: #fff;
-    padding: 16px 0;
 }
 
 header {
@@ -25,16 +25,12 @@ header {
     z-index: 1;
 }
 
-header .container,
-footer .container {
-    display: flex;
+
+header> .container,
+footer> .container {
     justify-content: space-between;
     align-items: center;
-}
-
-header h1 {
-    text-align: center;
-    width: 100%;
+    padding-bottom: 16px;
 }
 
 nav {
@@ -42,35 +38,27 @@ nav {
     padding: 16px 0;
 }
 
-nav ul {
+nav li{
     list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-}
-
-nav li {
-    margin: 0 16px;
+    display: inline;
+    margin-right: 16px;
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
 }
 
-nav li a {
+nav li a{
     color: #fff;
     text-decoration: none;
 }
 
 .menu-hamburguer {
     width: 32px;
-    cursor: pointer;
+    cursor:pointer;
 }
 
 .container-flex {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center; 
 }
 
 #sobre-a-loja img {
@@ -87,16 +75,13 @@ section h2 {
 }
 
 .lista-veiculos {
-    display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 .lista-veiculos li {
     list-style: none;
-    width: 30%;
+    max-width: 30%;
     margin-bottom: 24px;
-    text-align: center;
 }
 
 .lista-veiculos li img {
@@ -108,7 +93,7 @@ section h2 {
 }
 
 .item-central {
-    margin: 0 auto;
+    margin: 0 5%;
 }
 
 button {
@@ -116,8 +101,8 @@ button {
     width: 100%;
     padding: 8px 0;
     border: none;
-    background-color: hsla(113, 91%, 49%, 0.953);
-    color: #fff;
+    background-color:hsla(113, 91%, 49%, 0.953);
+    color:#fff;
     font-size: 16px;
     font-weight: bold;
     font-style: italic;
@@ -129,7 +114,6 @@ button {
     margin: 16px 0;
     display: block;
 }
-
 .price del {
     color: #ccc;
     font-size: 14px;
@@ -147,87 +131,58 @@ button {
 .form-campo input,
 .form-campo textarea {
     width: 100%;
+    display: block;
     padding: 8px;
 }
 
 .form-campo textarea {
+    /*Para usuário não ficar aumentado as linhas*/
     resize: none;
     height: 120px;
 }
 
 form {
     max-width: 360px;
-    margin: 0 auto;
 }
 
 form button {
-    max-width: 100%;
+    max-width: 120px;
 }
 
-footer ul {
-    display: flex;
-    justify-content: center;
+footer li {
     list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-footer ul li {
     margin-left: 16px;
 }
 
-footer ul li img {
+footer li img {
     height: 32px;
 }
 
-footer p {
-    margin-bottom: 16px;
-    text-align: center;
-}
 
-
-@media screen and (max-width: 767px) {
-    .container {
-        max-width: 100%;
-        padding: 0 10px; 
-    }
-
-    header .container,
-    footer .container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    header h1 {
-        margin-bottom: 16px;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav li {
-        margin: 8px 0;
-    }
-
-    #sobre-a-loja img {
-        width: 100%;
-        max-width: 100%;
-        margin: 0 0 16px 0;
-    }
-
-    .lista-veiculos li {
-        width: 100%;
+@media (max-width: 768px) {
+    #carousel-imagens {
+        max-width: 100%; 
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-    .container {
-        max-width: 100%;
-    }
-
-    .lista-veiculos li {
-        width: 45%;
-    }
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
 }
+
+nav ul li {
+    margin: 0 16px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+
+
